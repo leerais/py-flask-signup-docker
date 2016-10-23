@@ -1,7 +1,7 @@
 import boto3
 
 # Get the service resource.
-dynamodb = boto3.resource('dynamodb')
+dynamodb = boto3.resource('dynamodb', region_name='us-west-2')
 
 # Create the DynamoDB table.
 table = dynamodb.create_table(
